@@ -1,7 +1,8 @@
 function App() {
   return (
     <main>
-      <h1>Hello Vite</h1>
+      <h1 className="text-[2.5rem]">Nate Abaria</h1>
+      <p className="text-xl">hello</p>
     </main>
   );
 }

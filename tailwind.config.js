@@ -6,6 +6,9 @@ export default {
       colors: {
         text: "#797979",
       },
+      fontFamily: {
+        Inter: ["Inter Tight", "sans-serif"],
+      },
     },
   },
   plugins: [],
