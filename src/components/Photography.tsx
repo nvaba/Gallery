@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "../index.css";
 
 interface PhotoData {
   acf: {
@@ -39,18 +40,25 @@ function Photography() {
   return (
     <section className="mt-20">
       <h2 className="text-xl">Photography</h2>
-      {data.acf.photography_repeater.map((photoGroup, index) => (
-        <article className="my-10" key={index}>
-          <img
-            src={photoGroup.photography_image.url}
-            alt={photoGroup.photography_image.alt}
-          />
-          <div className="flex justify-between">
-            <p>{photoGroup.photography_title}</p>
-            <p>{photoGroup.photography_date}</p>
-          </div>
-        </article>
-      ))}
+      <div className="custom-grid mt-5">
+        {data.acf.photography_repeater.map((photoGroup, index) => (
+          <article
+            className="my-10"
+            style={{ breakInside: "avoid", marginBottom: "1rem" }}
+            key={index}
+          >
+            <img
+              className="w-full"
+              src={photoGroup.photography_image.url}
+              alt={photoGroup.photography_image.alt}
+            />
+            <div className="md:flex md:justify-between">
+              <p>{photoGroup.photography_title}</p>
+              <p>{photoGroup.photography_date}</p>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }

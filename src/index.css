@@ -16,3 +16,19 @@
     @apply font-bold;
   }
 }
+
+.custom-grid {
+  column-count: 1;
+}
+
+@media (min-width: 640px) {
+  .custom-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    column-count: 3;
+  }
+}
