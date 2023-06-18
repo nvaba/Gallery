@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         text: "#797979",
+        background: "#f5f5f7",
       },
       fontFamily: {
         Inter: ["Inter Tight", "sans-serif"],
