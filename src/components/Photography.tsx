@@ -38,8 +38,9 @@ function Photography() {
   }, []);
 
   return (
-    <section className="mt-20">
+    <section className="my-20">
       <h2 className="text-xl xl:text-3xl">Photography</h2>
+      <p>A master of warm tones</p>
       <div className="custom-grid mt-5">
         {data.acf.photography_repeater.map((photoGroup, index) => (
           <article
