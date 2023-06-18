@@ -39,12 +39,11 @@ function Photography() {
 
   return (
     <section className="mt-20">
-      <h2 className="text-xl">Photography</h2>
+      <h2 className="text-xl xl:text-3xl">Photography</h2>
       <div className="custom-grid mt-5">
         {data.acf.photography_repeater.map((photoGroup, index) => (
           <article
-            className="my-10"
-            style={{ breakInside: "avoid", marginBottom: "1rem" }}
+            style={{ breakInside: "avoid", marginBottom: "2rem" }}
             key={index}
           >
             <img
@@ -52,7 +51,7 @@ function Photography() {
               src={photoGroup.photography_image.url}
               alt={photoGroup.photography_image.alt}
             />
-            <div className="md:flex md:justify-between">
+            <div className="flex justify-between">
               <p>{photoGroup.photography_title}</p>
               <p>{photoGroup.photography_date}</p>
             </div>
