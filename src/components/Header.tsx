@@ -3,7 +3,10 @@ function Header() {
     <header>
       <h1 className="text-3xl xl:text-5xl">Nate Abaria</h1>
       <p className="xl:text-xl">Selected Work</p>
-      <p className="mt-2">A collection of freelance and fun</p>
+      <div className="mt-2 flex items-center">
+        <p className="mr-2">Open to work</p>
+        <div className="online-dot"></div>
+      </div>
     </header>
   );
 }
