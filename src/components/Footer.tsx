@@ -1,3 +1,7 @@
+import LinkedIn from "/linkedin.svg";
+import Github from "/github.svg";
+import Right from "/right.svg";
+
 function Footer() {
   return (
     <footer>
@@ -12,17 +16,17 @@ function Footer() {
               target="_blank"
               href="https://www.linkedin.com/in/nate-abaria-891b34243/"
             >
-              <img className="h-7" src="/linkedin.svg" alt="LinkedIn" />
+              <img className="h-7" src={LinkedIn} alt="LinkedIn" />
             </a>
             <a target="_blank" href="https://github.com/nvaba">
-              <img className="h-7" src="/github.svg" alt="Github" />
+              <img className="h-7" src={Github} alt="Github" />
             </a>
           </div>
         </nav>
         <nav className="mt-5 sm:mt-0">
           <a target="_blank" href="https://nateabaria.ca">
             <span className="flex gap-1">
-              Portfolio <img src="/right.svg" alt="Right Arrow" />
+              Portfolio <img src={Right} alt="Right Arrow" />
             </span>
           </a>
         </nav>
